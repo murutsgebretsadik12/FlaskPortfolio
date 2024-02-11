@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<main>
+    <section id="about">
+        <h1 class="sub_heading"> About Me</h1>
+        <div class="divider"></div>
+        <p class="sub_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim corporis animi delectus debitis cum hic autem unde totam officiis quaerat fuga nostrum temporibus, dolor perspiciatis sequi ea veritatis quas!</p>
+
+        <div class="about_col">
+            <!-- img-col -->
+            <div class="img_col">
+                <img src="{{url_for('static', filename='images/profile.jpg')}}" alt="profile img" >
+
+            </div>
+
+            <!-- information -->
+            <div class="info_col">
+                <h3>web developer</h3>
+                <p class="sub_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam optio, odit quia eius, veritatis mollitia, exercitationem dignissimos rem perferendis porro facilis ut dolorem? Voluptatum voluptatem natus quod temporibus ullam pariatur.</p>
+                <div class="icon_list_col">
+                    <!-- left side list -->
+                    <div class="icon_list">
+                        <ul>
+                            <li><i class="fa-solid fa-angle-right"></i><strong>Birthday:</strong> <span>23/05/1995</span></li>
+                            <li><i class="fa-solid fa-angle-right"></i><strong>Website:</strong> <span>www.muruts.com</span></li>
+                            <li><i class="fa-solid fa-angle-right"></i><strong>phone:</strong> <span>+3530833018408</span></li>
+                            <li><i class="fa-solid fa-angle-right"></i><strong>City:</strong> <span>Dublin, Republic of Ireland</span></li>
+                        </ul>
+                    </div>
+                    <!-- right side list -->
+                    <div class="icon_list">
+                        <ul>
+                            <li><i class="fa-solid fa-angle-right"></i><strong>Age:</strong> <span>28</span></li>
+                            <li><i class="fa-solid fa-angle-right"></i><strong>Degree:</strong> <span>Master</span></li>
+                            <li><i class="fa-solid fa-angle-right"></i><strong>Email:</strong> <span>murutsmenge21@gmail.com</span></li>
+                            <li><i class="fa-solid fa-angle-right"></i><strong>Frelance:</strong> <span>Available</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
+
+
+{% block title %}
+about page
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/about.css') }}">
+{% endblock %}
