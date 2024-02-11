@@ -2,7 +2,7 @@
 
 {% block content %}
 
-    <main>
+<main>
     <section id="service">
         <h1 class="sub_heading">Service</h1>
         <div class="divider"></div>
@@ -78,6 +78,15 @@
 
         </div>
     </section>
-    </main>
+</main>
 
 {% endblock content %}
+
+
+{% block title %}
+About Page
+{% endblock %} 
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/service.css') }}">
+{% endblock %}
