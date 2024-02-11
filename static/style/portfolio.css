@@ -1,0 +1,110 @@
+/* main section */
+main{
+    margin-left:300px;
+    background-color: var(--bgColor);
+    transition: 0.3s;
+ }
+ 
+ @media only screen and (max-width:1050px){
+    main{
+        margin-left: 0;
+    }
+ }
+
+ /* portfolio section */
+ #portfolio{
+    padding: 70px 30px;
+ }
+ 
+ #portfolio .port_row{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:35px;
+ }
+ 
+ #portfolio .port_row .port_item{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+ }
+ 
+ #portfolio .port_row .port_item .port_img img{
+    width: 100%;
+    border-radius: 10px;
+ }
+ #portfolio .port_row .port_item .port_info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--themeColor);
+    padding: 0 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transform: scale(0);
+    transition: 0;
+    border-radius: 10px;
+    visibility: hidden;
+ 
+ }
+ 
+ 
+ 
+  
+ #portfolio .port_row .port_item:hover .port_info{
+    transform: scale(1);
+    visibility: visible;
+ }
+ 
+ #portfolio .port_row .port_item:hover .port_info h4{
+    color: var(--bgColor);
+    font-size: 25px;
+    font-weight: 600;
+ }
+ 
+ #portfolio .port_row .port_item:hover .port_info h4 + p{
+    color:  var(--bgColor);
+    font-size: 14px;
+ }
+ 
+ #portfolio .port_row .port_item:hover .port_info a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width:45px;
+    height:45px;
+    background-color: var(--bgColor);
+    border-radius: 50%;
+    color: var(--themeColor);
+    line-height: 46px;
+    transition: 0.4s;
+ 
+ }
+ 
+ #portfolio .port_row .port_item:hover .port_info a:hover{
+    background-color: var(--sideBGColor);
+    color:var(--bgColor)
+ }
+ 
+ 
+ /* mobile view */
+ @media only screen and (max-width:650px){
+    #portfolio{
+       padding: 50px 10px;
+    }
+    
+    #portfolio .port_row{
+       margin-top: 50px;
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-gap:15px;
+    }
+ }
+ 
