@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block content %} 
+<main>
+    <section id="resume">
+        <h1 class="sub_heading">Resume</h1>
+        <div class="divider"></div>
+        <p class="sub_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias, cupiditate, veritatis expedita labore consequatur soluta modi officia magni sint suscipit porro. Animi, enim libero et iste ipsam obcaecati ea!</p>
+        <div class="resume_row">
+            <!-- left col -->
+            <div class="resume_cols">
+                <h2>Summary</h2>
+                <div class="my_info">
+                    <h3>Muruts M</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere ad eius suscipit rerum vel numquam deserunt aspernatur est nesciunt inventore at dolorum animi ratione, cumque quis laudantium id dolorem iusto.</p>  
+                    <ul>
+                        <li>Dublin 22, Ireland</li>
+                        <li>+(353) 833 018 405</li>
+                        <li>murutsmenge21@gmail.com</li>
+                    </ul>
+                </div>   
+
+                <h2>Education</h2>
+                <div class="my_edu">
+                    <h3> Bsc of Degree in Civil Engineering</h3>
+                    <span class="sp_box">2018-2019</span>
+                    <p>Ethiopia Institute of Technology Mekelle</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus omnis cum rem, similique quam veniam asperiores voluptas quis labore! Consequuntur ad fugit autem recusandae iste eius ipsa laudantium voluptate voluptas!</p>
+                </div>
+
+                
+            </div>
+            <!-- right col -->
+            <div class="resume_cols">
+                <h2>Professional Exprience</h2>
+                <div class="pro_exp">
+                    <h3>Office Engineer</h3>
+                    <span class="sp_box">2018-2020</span>
+                    <p>Adiss Ababa, Ethiopia</p>
+
+                    <ul>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ipsum maxime impedit repudiandae praesentium vel accusamus necessitatibus aspernatur, accusantium nesciunt perferendis tempora! Nihil, ipsum unde aperiam optio veniam possimus et.</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ipsum maxime impedit repudiandae praesentium vel accusamus necessitatibus aspernatur, accusantium nesciunt perferendis tempora! Nihil, ipsum unde aperiam optio veniam possimus et.</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ipsum maxime impedit repudiandae praesentium vel accusamus necessitatibus aspernatur, accusantium nesciunt perferendis tempora! Nihil, ipsum unde aperiam optio veniam possimus et.</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ipsum maxime impedit repudiandae praesentium vel accusamus necessitatibus aspernatur, accusantium nesciunt perferendis tempora! Nihil, ipsum unde aperiam optio veniam possimus et.</li>
+                    </ul>        
+                </div>
+
+                <div class="pro_exp">
+                    <h3>Office Engineer</h3>
+                    <span class="sp_box">2020-2022</span>
+                    <p>Adiss Ababa, Ethiopia</p>
+
+                    <ul>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ipsum maxime impedit repudiandae praesentium vel accusamus necessitatibus aspernatur, accusantium nesciunt perferendis tempora! Nihil, ipsum unde aperiam optio veniam possimus et.</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ipsum maxime impedit repudiandae praesentium vel accusamus necessitatibus aspernatur, accusantium nesciunt perferendis tempora! Nihil, ipsum unde aperiam optio veniam possimus et.</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ipsum maxime impedit repudiandae praesentium vel accusamus necessitatibus aspernatur, accusantium nesciunt perferendis tempora! Nihil, ipsum unde aperiam optio veniam possimus et.</li>
+                        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ipsum maxime impedit repudiandae praesentium vel accusamus necessitatibus aspernatur, accusantium nesciunt perferendis tempora! Nihil, ipsum unde aperiam optio veniam possimus et.</li>
+                    </ul>   
+                </div>  
+
+            </div>
+        </div>
+
+    </section>
+</main>
+{% endblock %} 
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/resume.css') }}">
+{% endblock %}
