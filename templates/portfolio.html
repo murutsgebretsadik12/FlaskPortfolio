@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<main>
+    <section id="portfolio">
+        <h1 class="sub_heading">Portfolio</h1>
+        <div class="divider"></div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, exercitationem soluta hic quasi, voluptatem tempora, totam necessitatibus iusto ut eveniet nulla! Cupiditate odio omnis eum sed sequi. Laudantium, corporis ut!</p>
+       
+        <div class="port_row">
+            <!-- portfolio item-1 -->
+            <div class="port_item">
+                <div class="port_img">
+                    <img src="{{url_for('static', filename='images/profile.jpg')}}" alt="">
+                </div>
+                <div class="port_info">
+                    <h4>wordpress</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus provident.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>       
+                </div>
+            </div>
+
+            <!-- portfolio item-2 -->
+            <div class="port_item">
+                <div class="port_img">
+                    <img src="{{url_for('static', filename='images/profile.jpg')}}" alt="">
+                </div>
+                <div class="port_info">
+                    <h4>wordpress</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus provident.</p>
+                    
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>       
+                </div>
+            </div>
+
+            <!-- portfolio item-3 -->
+            <div class="port_item">
+                <div class="port_img">
+                    <img src="{{url_for('static', filename='images/profile.jpg')}}" alt="">
+                </div>
+                <div class="port_info">
+                    <h4>wordpress</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus provident.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>        
+                </div>
+            </div>
+
+                <!-- portfolio item-2 -->
+            <div class="port_item">
+                <div class="port_img">
+                    <img src="{{url_for('static', filename='images/profile.jpg')}}" alt="">
+                </div>
+                <div class="port_info">
+                    <h4>wordpress</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus provident.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>        
+                </div>
+            </div>
+
+                 <!-- portfolio item-2 -->
+            <div class="port_item">
+                <div class="port_img">
+                    <img src="{{url_for('static', filename='images/profile.jpg')}}" alt="">
+                </div>
+                <div class="port_info">
+                    <h4>wordpress</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus provident.</p> 
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>       
+                </div>
+            </div>
+            
+        </div>
+     </section>
+</main>
+{% block content %}
+
+
+{% block title %}
+portfolio page
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/portfolio.css') }}">
+{% endblock %}
+
