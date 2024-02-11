@@ -136,3 +136,25 @@ header .footer p a{
     z-index:  999;
 }
 
+/* mobile view */
+@media only screen and (max-width:1050px){
+
+    header{
+        left:-300px;
+    }
+    header .footer{
+        left: -300px;
+    }
+
+    #MenuBtn{
+        display: block;
+    }
+}
+
+/* Header toggle */
+.mobile_nav_active header{
+    left:0
+}
+.mobile_nav_active header .footer{
+    left: 0;
+}
