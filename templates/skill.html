@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<main>
+    <section id="skill">
+        <h1 class="sub-heading">Skills</h1>
+        <div class="divider"></div>
+        <p class="sub_para">As a seasoned web developer, I've honed my skills in various technologies, ensuring a well-rounded expertise in crafting exceptional digital experiences. Here's a snapshot of my proficiency:</p>
+        
+        <div class="skill_row">
+            <!-- skill-1 -->
+            <div class="skill_box">
+                <div class="skill_info">
+                    <h2>HTML</h2>
+                    <h2>85%</h2>
+                </div>
+                <div class="skill_outer_line">
+                    <div class="skill_inner_line" style="width:85%;"></div>
+                </div>
+            </div>
+            
+            <!-- skill-2 -->
+            <div class="skill_box">
+                <div class="skill_info">
+                    <h2>CSS</h2>
+                    <h2>85%</h2>
+                </div>
+                <div class="skill_outer_line">
+                    <div class="skill_inner_line" style="width:85%;"></div>
+                </div>
+            </div>
+    
+            <!-- skill-3 -->
+            <div class="skill_box">
+                <div class="skill_info">
+                    <h2>JavaScript</h2>
+                    <h2>65%</h2>
+                </div>
+                <div class="skill_outer_line">
+                    <div class="skill_inner_line" style="width:65%;"></div>
+                </div>
+            </div>
+    
+            <!-- skill-4 -->
+            <div class="skill_box">
+                <div class="skill_info">
+                    <h2>python</h2>
+                    <h2>60%</h2>
+                </div>
+                <div class="skill_outer_line">
+                    <div class="skill_inner_line" style="width:60%;"></div>
+                </div>
+            </div>
+            <!-- skill-5 -->
+            <div class="skill_box">
+                <div class="skill_info">
+                    <h2>web design</h2>
+                    <h2>65%</h2>
+                </div>
+                <div class="skill_outer_line">
+                    <div class="skill_inner_line" style="width:85%;"></div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+</main>
+{% endblock  %}
+
+{% block title %}
+ skill page
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/skill.css') }}">
+{% endblock %}
