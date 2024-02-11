@@ -1,0 +1,138 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,500;1,8..30,600&family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,200;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+
+/* global variable */
+:root{
+    --sideBGColor:#040b14;
+    --themeColor:#00A78E;
+    --iconBGColor:#2C2F3F;
+    --textColor:#353535;
+    --bgColor:#F7F7F7;
+}
+
+/* header start */
+
+header{
+    height: 100vh;
+    width:300px;
+    padding: 15px 30px;
+    background-color: var(--sideBGColor);
+    overflow-y: auto;
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    transition: 0.4s;
+    z-index: 99;
+}
+
+header .profile{
+    text-align: center;
+    margin: 10px 0;
+}
+
+header .profile img{
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid var(--iconBGColor);
+}
+
+header .profile h1{
+    color: white;
+    font-weight: 600;
+}
+header .profile .icons a{
+    display:inline-block;
+    width: 36px;
+    height:36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+    background-color: var(--iconBGColor);
+    color: white;
+    font-size: 18px;
+    margin: 1.5px;
+    transition: 0.4s;
+}
+
+header .profile .icon a:hover{
+    background-color: var(--themeColor);
+}
+
+header nav{
+    margin-top: 30px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 7px 0;
+    color: lightgray;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+
+header nav ul li a i{
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+header nav ul li a:hover i{
+    color: var(--themeColor);
+}
+
+header nav ul li .active i{
+    color: var(--themeColor);
+}
+
+/* footer */
+header .footer{
+    text-align: center;
+    background-color: var(--sideBGColor);
+    width: 300px;
+    color: var(lightgray);
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    transition: 0.4s;
+}
+
+header .footer p a{
+    color: var(--themeColor);
+}
+
+#MenuBtn{
+    position: fixed;
+    top: 25px;
+    right:25px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color:white;
+    background-color: var(--themeColor);
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+    display: none;
+    z-index:  999;
+}
+
