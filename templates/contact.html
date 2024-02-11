@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <main>
+        <section id="contact">
+            <h1 class="sub_heading">Contact</h1>
+            <div class="divider"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur dolores iusto minima consequatur magnam eius iure accusamus nostrum corporis, perferendis repudiandae nihil inventore  necessitatibus!</p>
+
+        <div class="contact_row">
+                <!-- left col -->
+                <div class="contact_left">
+
+                    <!-- Email Box -->
+                    <div class="icon_box">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="info">
+                            <h4>Email:</h4>
+                            <p>murutsmenge21@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Call Box -->
+                    <div class="icon_box">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="info">
+                            <h4>Call:</h4>
+                            <p>+353 833 018 415</p>
+                        </div>
+                    </div>
+
+                        <!-- Location Box -->
+                    <div class="icon_box">
+                            <div class="icon">
+                                <i class="fa-solid fa-location"></i>
+                            </div>
+                            <div class="info">
+                                <h4>Location</h4>
+                                <p>Dublin, Ireland</p>
+                            </div>
+                    </div>
+
+                    <!-- map -->
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9533.444295912499!2d-6.3742130363722405!3d53.31888802453681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670cb02daf3061%3A0x6d43d53f98161d91!2sRedcow%2C%20Dublin%2C%20D22%20YX80!5e0!3m2!1sen!2sie!4v1707259485770!5m2!1sen!2sie" width="100% " height="250" style="border:5;"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+                <!-- right col -->
+                <div class="contact_right">
+                    
+                    <form action="">
+                        <input type="text" name="name" id="name" placeholder="Your Name">
+                        <input type="email" name="email" id="email" placeholder="Your Email">
+                        <input type="text" name="subject" id="subject" placeholder="subject">
+                        <textarea name="msg" id="msg" rows="9" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send Message">
+
+                    </form>
+                </div>
+        </div>
+        </section>
+    </main>
+{% endblock content %}
+
+{% block title %}
+contact page
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/contact.css') }}">
+{% endblock %}
