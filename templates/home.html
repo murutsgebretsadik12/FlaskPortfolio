@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+      <main>
+        <section id="home">
+            <div class="home_row">
+                <!-- background image -->
+                <div class="background"></div>
+                <p><br> Welcome.</br> </p>
+                <h1>I'm a <span class="auto_input">Muruts Gebretsadik</span></h1>
+                <p>based in Dublin, Ireland</p>
+            </div>
+        </section>
+      </main>
+{% endblock  %}
+
+{% block title %}
+     home page
+{% endblock %}
+
+ <!-- adding style css -->
+{% block styles %}
+<link rel="stylesheet" href="{{url_for('static',filename='style/home.css')}}">
+{% endblock  %}
