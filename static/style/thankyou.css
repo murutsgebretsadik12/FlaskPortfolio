@@ -1,0 +1,39 @@
+.thank_you_container{
+    max-width: 470px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+main div h3{
+    color: var(--themeColor);
+    font-weight: 700px;
+    font-size: 35px;
+    letter-spacing: 0.5s;
+ }
+
+ main div p{
+    color: var(--textColor);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+ }
+
+/* Responsive Styles */
+@media screen and (max-width: 560px) {
+    .thank-you-container {
+        margin: 20px;
+        padding: 15px;
+    }
+    main div h3{
+        font-weight: 600px;
+        font-size: 25px;
+        letter-spacing: 0;
+     }
+     main div p{
+        color: var(--textColor);
+        font-size: 15px;
+        letter-spacing: 0px;
+     } 
+}
