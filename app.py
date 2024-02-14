@@ -1,13 +1,20 @@
 from flask import Flask, render_template,url_for, request
 app =Flask(__name__)
 
-
-
+# list of skill with their names and corresponding
+skills_list = [
+        {"name": "HTML", "percentage": 85},
+        {"name": "CSS", "percentage": 75},
+        {"name": "JavaScript", "percentage": 65},
+        {"name": "Python", "percentage": 60},
+        {"name": "Web Design", "percentage": 65}
+    ]
 
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    # render the 'index.html' template and pass the skills_list to it
+    return render_template('index.html',skills_list = skills_list)
 
 @app.route('/home')
 def home():
