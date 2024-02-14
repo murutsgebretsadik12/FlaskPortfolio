@@ -53,6 +53,6 @@ def submit_form():
     # retrieve form data from the request object
     name = request.form.get('name')
 
-    return render_template('#', name=name)
+    return render_template('thankyou.html', name=name)
 if __name__ == '__main__':
     app.run(debug=True)
