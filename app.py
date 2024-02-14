@@ -1,4 +1,4 @@
-from flask import Flask, render_template,url_for
+from flask import Flask, render_template,url_for, request
 app =Flask(__name__)
 
 
@@ -39,5 +39,13 @@ def service():
 def contact():
     return render_template('contact.html')
 
+
+@app.route('/submit_form', methods=['POST'])
+def submit_form():
+
+    # retrieve form data from the request object
+    name = request.form.get('name')
+
+    return render_template('#', name=name)
 if __name__ == '__main__':
     app.run(debug=True)
