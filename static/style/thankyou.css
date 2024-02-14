@@ -22,7 +22,7 @@ main div h3{
 
 /* Responsive Styles */
 @media screen and (max-width: 560px) {
-    .thank-you-container {
+    .thank_you_container {
         margin: 20px;
         padding: 15px;
     }
