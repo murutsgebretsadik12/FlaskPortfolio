@@ -14,10 +14,10 @@
                 <div class="skill_box">
                     <div class="skill_info">
                         <h2>{{skill.name}}</h2>
-                        <h2>{{ skill.percentage }}%</h2>
+                        <h2>{{skill.percentage}}%</h2>
                     </div>
                     <div class="skill_outer_line">
-                        <div class="skill_inner_line" style="width:'{{skill.percentage}}%' "></div>
+                        <div class="skill_inner_line" data-percentage="{{ skill.percentage }}"></div>
                     </div>
                 </div>
             {% endfor %} 
