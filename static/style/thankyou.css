@@ -1,5 +1,5 @@
 
-.thank_you_container{
+main .thank_you_container{
     max-width: 470px;
     margin: 50px auto;
     padding: 20px;
@@ -7,9 +7,9 @@
 }
 
 
-main div h3{
+main .thank_you_container h3{
     color: var(--themeColor);
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 35px;
     letter-spacing: 0.5s;
  }
