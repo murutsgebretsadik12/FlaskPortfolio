@@ -41,3 +41,17 @@ window.addEventListener('scroll', function(){
 		}
 	});
 });
+
+
+// setting the width of each skill
+document.addEventListener("DOMContentLoaded", function() {
+    var skillElements = document.querySelectorAll(".skill_inner_line");
+
+    skillElements.forEach(function(skillElement) {
+        var skillPercentage = skillElement.getAttribute("data-percentage");
+        skillElement.style.width = skillPercentage + "%";
+    });
+});
+
+
+
