@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My portfolio website">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Murut's Web Development Portfolio">
+    <meta property="og:description" content="Explore Murut's portfolio showcasing various web development projects.">
+    <meta property="og:image" content="https://my-portfolio1-3lfl.onrender.com/portfolio/abe_gerage.jpg.jpg">
+    <meta property="og:url" content="https://my-portfolio1-3lfl.onrender.com/portfolio">
+    <!-- canonical url -->
+    <link rel="canonical" href="https://my-portfolio1-3lfl.onrender.com/about">
     <link rel="stylesheet" href="{{url_for('static', filename='style/layout.css')}}">
+    <!-- favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon-16x16.png') }}">
     {% block styles %}{% endblock %}
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
